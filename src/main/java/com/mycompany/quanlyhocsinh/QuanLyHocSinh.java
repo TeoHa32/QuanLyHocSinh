@@ -19,7 +19,7 @@ public class QuanLyHocSinh {
 //        new StudentPanel().setVisible(true);
         JFrame frame = new JFrame("Ứng dụng quản lý học sinh");
         // Gắn panel vào frame
-        frame.setContentPane(new ClassPanel());
+        frame.setContentPane(new TeacherPanel());
         // Cài đặt kích thước, đóng cửa sổ, hiển thị
         frame.setSize(1000, 800);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
