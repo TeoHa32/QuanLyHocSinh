@@ -4,6 +4,8 @@ package GUI;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ClassPanel extends JPanel {
     
@@ -154,9 +156,27 @@ public class ClassPanel extends JPanel {
         actionPanel.add(btnExport);
         
         panel.add(actionPanel, BorderLayout.EAST);
-        
+        btnAdd.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new addClass().setVisible(true);
+            }
+          
+            
+                
+        });
+        btnEdit.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                
+            }
+            
+            
+            
+        });
         return panel;
     }
+    
     
     // Thêm phương thức hỗ trợ tạo button với icon
     private JButton createIconButton(String text, String iconName, Color bgColor) {

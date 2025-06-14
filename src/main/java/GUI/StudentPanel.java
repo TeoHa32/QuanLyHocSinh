@@ -192,7 +192,7 @@ public class StudentPanel extends JPanel {
         // Tạo model cho bảng
         String[] columns = {
             "Mã HS", "Họ và tên", "Ngày sinh", "Giới tính", 
-            "Địa chỉ", "Số điện thoại", "Lớp"
+            "Địa chỉ", "Số điện thoại","Số điện thoại phụ huynh", "Lớp","Năm học",
         };
         
         DefaultTableModel model = new DefaultTableModel(columns, 0) {
@@ -255,7 +255,7 @@ public class StudentPanel extends JPanel {
         actionPanel.add(btnDelete);
         actionPanel.add(btnImport);
         actionPanel.add(btnExport);
-        
+        actionPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
         // Thêm xử lý sự kiện cho các button
         btnImport.addActionListener(e -> importExcel());
         btnExport.addActionListener(e -> exportExcel());

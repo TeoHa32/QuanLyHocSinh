@@ -83,7 +83,6 @@ public class GradePanel extends JPanel {
         JComboBox<String> cboSubject = new JComboBox<>(subjects);
         JComboBox<String> cboClass = new JComboBox<>(classes);
         JComboBox<String> cboSemester = new JComboBox<>(semesters);
-        
         for (JComboBox<String> cbo : new JComboBox[]{cboSubject, cboClass, cboSemester}) {
             cbo.setPreferredSize(new Dimension(130, 35));
         }
@@ -115,7 +114,6 @@ public class GradePanel extends JPanel {
         };
         DefaultTableModel model = new DefaultTableModel(columns, 0);
         gradeTable = new JTable(model);
-        
         // Tùy chỉnh bảng
         gradeTable.setRowHeight(35);
         gradeTable.getTableHeader().setPreferredSize(new Dimension(0, 35));
@@ -187,14 +185,12 @@ public class GradePanel extends JPanel {
         } catch (Exception e) {
             System.out.println("Không thể tải icon: " + iconName);
         }
-        
         button.setPreferredSize(new Dimension(150, 35));
         button.setBackground(bgColor);
         button.setForeground(Color.BLACK);
         button.setFocusPainted(false);
         button.setFont(new Font("Arial", Font.PLAIN, 14));
         button.setMargin(new Insets(0, 10, 0, 10));
-        
         return button;
     }
 } 
