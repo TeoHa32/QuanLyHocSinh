@@ -1,9 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.quanlyhocsinh;
-
 import GUI.Login;
 import java.sql.Connection;
 import DTO.connection;

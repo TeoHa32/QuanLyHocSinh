@@ -168,7 +168,7 @@ public class ClassPanel extends JPanel {
         btnEdit.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
-                
+                 new addClass().setVisible(true);
             }
             
             
@@ -186,21 +186,18 @@ public class ClassPanel extends JPanel {
             Image img = originalIcon.getImage();
             Image newImg = img.getScaledInstance(20, 20, Image.SCALE_SMOOTH);
             ImageIcon icon = new ImageIcon(newImg);
-            
             button.setIcon(icon);
             button.setHorizontalTextPosition(JButton.RIGHT);
             button.setIconTextGap(10);
         } catch (Exception e) {
             System.out.println("Không thể tải icon: " + iconName);
         }
-        
         button.setPreferredSize(new Dimension(150, 35));
         button.setBackground(bgColor);
         button.setForeground(Color.BLACK);
         button.setFocusPainted(false);
         button.setFont(new Font("Arial", Font.PLAIN, 14));
         button.setMargin(new Insets(0, 10, 0, 10));
-        
         return button;
     }
 } 
